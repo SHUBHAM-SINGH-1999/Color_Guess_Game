@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.Input_Screen"
+        android:background="@drawable/background">
+
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="24dp"
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_margin="30dp"
+            android:layout_height="250dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <EditText
+            android:id="@+id/name_Input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:elevation="100dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:layout_marginBottom="80dp"
+            app:layout_constraintBottom_toBottomOf="@id/cardview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cardview" />
+
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/cardview"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name_Input" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color Guess Game"
+            android:textColor="@color/textColor"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="42dp"
+            android:layout_marginTop="32dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="300dp"
+            android:text="* Game start after pressing start Button"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/cardview"
+            app:layout_constraintStart_toStartOf="@+id/cardview"
+            app:layout_constraintBottom_toBottomOf="@+id/cardview" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
